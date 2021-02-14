@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Rust: cargo build - pyext-myrustlib",
+			"command": [],
+			"options": {
+				"cwd": "${workspaceFolder}/pyext-myrustlib"
+			},
+			"args": ["cargo", "build", "--release"]
+		},
+		{
+			"type": "shell",
+			"label": "Rust: Copy myrustlib",
+			"command":[],
+			"args": ["cp", "./pyext-myrustlib/target/release/libmyrustlib.so", "./myrustlib.so"]
+		},
+		{
+			"label": "Rust: build for python usage",
+			"dependsOn": [
+				"Rust: cargo build - pyext-myrustlib",
+				"Rust: Copy myrustlib"
+			]
+		}
+	]
+} 

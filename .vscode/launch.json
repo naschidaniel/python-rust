@@ -1,0 +1,16 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Rund python_and_rust.py",
+            "type": "python",
+            "request": "launch",
+            "program": "python_and_rust.py",
+            "console": "integratedTerminal",
+            "preLaunchTask": "Rust: build for python usage",
+        }
+    ]
+}

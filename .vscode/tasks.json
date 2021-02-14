@@ -14,7 +14,7 @@
 			"type": "shell",
 			"label": "Rust: Copy myrustlib",
 			"command":[],
-			"args": ["cp", "./pyext-myrustlib/target/release/libmyrustlib.so", "./myrustlib.so"]
+			"args": ["cp", "${workspaceFolder}/pyext-myrustlib/target/release/libmyrustlib.so", "${workspaceFolder}/myrustlib.so"]
 		},
 		{
 			"label": "Rust: build for python usage",

@@ -27,3 +27,7 @@ The commands are also integrated for debugging in vscode.
 
 * Rust bindings for the python interpreter [https://github.com/dgrunwald/rust-cpython](https://github.com/dgrunwald/rust-cpython).
 * This repo was inspired by [https://github.com/rochacbruno/rust-python-example](https://github.com/rochacbruno/rust-python-example).
+
+## LICENSE
+
+[GNU GENERAL PUBLIC LICENSE](./LICENSE.md)

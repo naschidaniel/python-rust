@@ -3,10 +3,9 @@
 A playground to test how well python and rust work together.
 
 ## Requirements
-```
-python 3.9.1
-rust 1.50.0
-```
+
+* python > 3.9.x
+* rust > 1.50.x
 
 ## How to try it
 

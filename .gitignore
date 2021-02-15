@@ -4,3 +4,5 @@ __pycache__
 # Rust
 pyext-myrustlib/target
 *.so
+*.dll
+*.pyd

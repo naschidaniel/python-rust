@@ -8,20 +8,37 @@
 			"options": {
 				"cwd": "${workspaceFolder}/pyext-myrustlib"
 			},
-			"args": ["cargo", "build", "--release"]
+			"args": [
+				"cargo",
+				"build",
+				"--release"
+			]
 		},
 		{
 			"type": "shell",
-			"label": "Rust: Copy myrustlib",
-			"command":[],
-			"args": ["cp", "${workspaceFolder}/pyext-myrustlib/target/release/libmyrustlib.so", "${workspaceFolder}/myrustlib.so"]
+			"label": "Fedora: Copy myrustlib",
+			"command": [],
+			"args": [
+				"cp",
+				"${workspaceFolder}/pyext-myrustlib/target/release/libmyrustlib.so",
+				"${workspaceFolder}/myrustlib.so"
+			],
+			"dependsOn": [
+				"Rust: cargo build - pyext-myrustlib"
+			]
 		},
 		{
-			"label": "Rust: build for python usage",
+			"type": "shell",
+			"label": "Windows: Copy myrustlib",
+			"command": [],
+			"args": [
+				"cp",
+				"${workspaceFolder}/pyext-myrustlib/target/debug/myrustlib.dll",
+				"${workspaceFolder}/myrustlib.pyd"
+			],
 			"dependsOn": [
-				"Rust: cargo build - pyext-myrustlib",
-				"Rust: Copy myrustlib"
+				"Rust: cargo build - pyext-myrustlib"
 			]
 		}
 	]
-} 
+}

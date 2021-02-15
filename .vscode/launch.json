@@ -5,12 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Rund python_and_rust.py",
+            "name": "Fedora: Run python_and_rust.py",
             "type": "python",
             "request": "launch",
             "program": "python_and_rust.py",
             "console": "integratedTerminal",
-            "preLaunchTask": "Rust: build for python usage",
+            "preLaunchTask": "Fedora: Copy myrustlib",
+        },
+        {
+            "name": "Windows: Run python_and_rust.py",
+            "type": "python",
+            "request": "launch",
+            "program": "python_and_rust.py",
+            "console": "integratedTerminal",
+            "preLaunchTask": "Windows: Copy myrustlib",
         }
     ]
 }
